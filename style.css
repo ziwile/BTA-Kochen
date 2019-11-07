@@ -1,0 +1,14 @@
+body{
+  background: #b598c3;
+}
+a{
+  color:yellow;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: Helvetica,Arial,sans-serif;
+}
+ li{list-style-type: none;}
+ul {
+  
+}
