@@ -22,7 +22,8 @@ ul {
 nav {
   display: none;
 }
-.show{
+
+.show {
   display: block;
 }
 
@@ -34,12 +35,14 @@ header {
   padding-left: 1rem;
   padding-right: 1rem;
 }
-button{
+
+button {
   background: none;
   border: none;
 }
-#hero{
-  background-image: linear-gradient(90deg, rgba(0,0,0,.5) 0%, rgba(0,0,0,.5) 100%), url("img/intro.jpg");
+
+#hero {
+  background-image: linear-gradient(90deg, rgba(0, 0, 0, .5) 0%, rgba(0, 0, 0, .5) 100%), url("img/intro.jpg");
   height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
@@ -50,7 +53,8 @@ button{
   justify-content: center;
   align-items: center;
 }
-.button{
+
+.button {
   background-color: white;
   color: #374A67;
   text-transform: uppercase;
@@ -59,39 +63,74 @@ button{
   text-decoration: none;
   font-weight: bold;
   border: 1px #374a67 solid;
-  box-shadow: 0px 4px 6px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.75);
   transition: all 0.4s ease;
   margin-top: 1rem;
   display: inline-block;
 }
-
-/*p{
-  padding: 20px;
-}*/
-
-.button:hover{
+.button:hover {
   color: white;
   background-color: #374a67;
   border-color: #fff;
 }
+
+.card a {
+  text-decoration: none;
+  color: #000;
+}
+
+.card p a {
+  color: #b2b2b2;
+}
+
+.card {
+  text-align: center;
+  box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.75);
+  border-radius: 5px;
+  overflow: hidden;
+}
+/* overflow padeda aprundinti paveiksla */
+.card img {
+  width: 100%;
+}
+
+.button.button-blue {
+  color: white;
+  background-color: #374a67;
+  border-color: #fff;
+  margin: 20px;
+}
+.button.button-blue:hover{
+  background-color: white;
+  color: #374a67;
+  border-color: #374a67;
+}
+#rezepte{
+  margin: 25px 25px 25px 25px;
+}
+#rezepte h2{
+  text-align: center;
+}
+
 
 @media (min-width:1024px) {
   nav {
     display: block;
   }
 
-button {
+  button {
     display: none;
   }
 
-nav ul {
+  nav ul {
     display: flex;
   }
 
-nav li {
+  nav li {
     margin-right: 16px;
   }
-  header{
+
+  header {
     padding-left: 5%;
     padding-right: 5%;
   }
