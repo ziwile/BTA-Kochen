@@ -77,10 +77,12 @@ button {
 .card a {
   text-decoration: none;
   color: #000;
+
 }
 
 .card p a {
   color: #b2b2b2;
+  padding: 1rem;
 }
 
 .card {
@@ -88,6 +90,7 @@ button {
   box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.75);
   border-radius: 5px;
   overflow: hidden;
+  margin: 1rem;
 }
 /* overflow padeda aprundinti paveiksla */
 .card img {
@@ -99,26 +102,46 @@ button {
   background-color: #374a67;
   border-color: #fff;
   margin: 20px;
+  display: block;
+
 }
 .button.button-blue:hover{
   background-color: white;
   color: #374a67;
   border-color: #374a67;
 }
-#rezepte{
-  margin: 25px 25px 25px 25px;
-}
+
 #rezepte h2{
   text-align: center;
 }
+#abo{
+  display: inline-block;
 
+}
+#newsletter{
+  background: #041223;
+  color: white;
+  text-align: center;
+  padding: 3rem 1rem;
+}
+.end h2{
+  font-size: 1rem;
+}
+.email{
+  border-radius: 5px;
+  padding: 1rem;
+}
+
+#social{
+  margin: 1rem;
+}
 
 @media (min-width:1024px) {
   nav {
     display: block;
   }
 
-  button {
+  nav button {
     display: none;
   }
 
@@ -134,4 +157,11 @@ button {
     padding-left: 5%;
     padding-right: 5%;
   }
+
+.row{
+  display: flex;
+}
+.card{
+  margin: 1rem;
+}
 }
