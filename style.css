@@ -19,13 +19,33 @@ ul {
   list-style-type: none;
 }
 
-nav {
+ header nav {
   display: none;
 }
 
 .show {
   display: block;
+  position: absolute;
+  top: 64px;
+  background: #fff;
+  width: 100%;
+  left: 0;
+  text-align: center;
+  height: calc(100vh - 64px);
+  line-height: 3rem;
+  bottom: 0px;
 }
+header .show {
+  padding: 6rem;
+}
+.show ul{
+  padding: 0;
+}
+.overflow{
+  overflow: hidden;
+}
+/* jei nenoriu, kad ant mobilaus paspaudus mygtuka,
+ butu galima toliau scrolinti.  */
 
 header {
   display: flex;
@@ -131,17 +151,34 @@ button {
   border-radius: 5px;
   padding: 1rem;
 }
-
-#social{
-  margin: 1rem;
+#social ul{
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+#social li {
+  margin-left: 1rem;
+  font-size: 2rem;
+}
+#legal{
+  text-align: center;
+}
+#legal ul{
+  padding: 0;
+}
+#legal li{
+  padding: 5px;
+}
+#footer{
+  background-color: pink;
 }
 
 @media (min-width:1024px) {
-  nav {
+  header nav {
     display: block;
   }
 
-  nav button {
+  header button {
     display: none;
   }
 
@@ -164,4 +201,11 @@ button {
 .card{
   margin: 1rem;
 }
+
+#footer{
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 5%;
+}
+
 }
